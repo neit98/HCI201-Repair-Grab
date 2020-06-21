@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txt_dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lâm Thanh Phát"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="110dp"/>
+
+        <TextView
+            android:id="@+id/txt_dialog_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Sửa chữa đồ điện, ống nước"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7h - 18h"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4"
+            android:stepSize="1"
+            android:clickable="false" />
+
+        <Button
+            android:id="@+id/btn_review"
+            android:drawableLeft="@drawable/ic_consult"
+            android:padding="20dp"
+            android:textAlignment="textStart"
+            android:drawablePadding="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xem đánh giá"
+            android:textSize="18sp"
+            android:background="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btn_dialog_call"
+            android:drawableLeft="@drawable/ic_call"
+            android:padding="20dp"
+            android:textAlignment="textStart"
+            android:drawablePadding="85dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:textSize="20sp"
+            android:background="@color/orangeDark"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/repairer_avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_repaier"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/repairer_avatar"
+        android:text="X"
+        android:layout_marginLeft="45sp"/>
+
+
+
+</RelativeLayout>

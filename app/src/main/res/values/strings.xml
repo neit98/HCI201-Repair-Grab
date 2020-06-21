@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">RepairGrab</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time_prompt">Chọn giờ</string>
+
+
+    <string-array name="spinner_item">
+        <item>Customer</item>
+        <item>Repairer</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>1 a.m</item>
+        <item>2 a.m</item>
+        <item>3 a.m</item>
+        <item>4 a.m</item>
+        <item>5 a.m</item>
+        <item>6 a.m</item>
+        <item>7 a.m</item>
+        <item>8 a.m</item>
+        <item>9 a.m</item>
+        <item>10 a.m</item>
+        <item>11 a.m</item>
+        <item>12 a.m</item>
+        <item>1 p.m</item>
+        <item>2 p.m</item>
+        <item>3 p.m</item>
+        <item>4 p.m</item>
+        <item>5 p.m</item>
+        <item>6 p.m</item>
+        <item>7 p.m</item>
+        <item>8 p.m</item>
+        <item>9 p.m</item>
+        <item>10 p.m</item>
+        <item>11 p.m</item>
+        <item>12 p.m</item>
+
+    </string-array>
+
+    <string-array name="bankinh">
+        <item> 2 km²</item>
+        <item> 5 km²</item>
+        <item> 7 km²</item>
+        <item> 10 km²</item>
+    </string-array>
+
+</resources>
+
+

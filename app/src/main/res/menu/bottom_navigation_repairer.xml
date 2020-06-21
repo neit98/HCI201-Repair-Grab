@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home_repairer"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Công việc" />
+
+    <item android:id="@+id/nav_history_repairer"
+        android:icon="@drawable/history_bottombar_ic"
+        android:title="Lịch sử"/>
+
+    <item android:id="@+id/nav_user_repairer"
+        android:icon="@drawable/account_bottombar_ic"
+        android:title="Tài khoản"/>
+</menu>

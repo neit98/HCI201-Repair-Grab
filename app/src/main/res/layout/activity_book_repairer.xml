@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BookRepairerActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/dark"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Gọi thợ"
+        app:titleMarginStart="90dp"></android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa tới"
+        android:paddingLeft="16dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/silver" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toà nhà Innovation, lô 24"
+            android:layout_marginLeft="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_marker"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"/>
+
+
+    <TextView
+        android:layout_marginLeft="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Khoảng cách tới chỗ bạn: 1 km (5 phút)"/>
+
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit"
+        android:hint="Vd: kế Bitexco, số tầng, toà nhà số..."
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/silver"
+        android:text="Thiết bị cần sửa"
+        android:paddingLeft="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit"
+        android:hint="Vd: Hư tủ lạnh, máy lạnh, quạt điện..."
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/silver"
+        android:text="Mã khuyến mãi"
+        android:paddingLeft="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit"
+        android:hint=""
+        android:paddingLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="300dp"
+            android:textColor="@color/white"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal|center"
+            android:text="Gọi thợ"
+            android:layout_marginBottom="10dp"
+            android:background="@color/orangeDark"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

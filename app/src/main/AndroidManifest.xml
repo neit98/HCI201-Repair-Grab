@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.repairgrab">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_tools"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/App">
+        <activity android:name=".activity.ViewDetailErrorActivity"></activity>
+        <activity android:name=".activity.RegisterServiceActivity" />
+        <activity android:name=".activity.RewardPointActivity" />
+        <activity android:name=".activity.WaitingCustomerAcceptActivity" />
+        <activity android:name=".activity.WaitingRepairActivity" />
+        <activity android:name=".activity.WaitingActivity" />
+        <activity android:name=".activity.MapCustomerActivity" />
+        <activity android:name=".activity.DetailErrorActivity" />
+        <activity android:name=".activity.RepairerMainActivity" />
+        <activity android:name=".activity.NotifyErrorActivity" />
+        <activity android:name=".activity.MenuAccountActivity" />
+        <activity android:name=".activity.MovingToCustomerActivity" />
+        <activity android:name=".activity.RepairMovingActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.SummaryActivity" />
+        <activity android:name=".activity.ReceiptActivity" />
+        <activity android:name=".activity.RepairActivity" />
+        <activity android:name=".activity.AcceptRepairActivity" />
+        <activity android:name=".activity.RepairerHomeActivity" />
+        <activity android:name=".activity.HistoryDetailActivity" />
+        <activity android:name=".activity.ConsultActivity" />
+        <activity android:name=".activity.RatingActivity" />
+        <activity android:name=".activity.BookRepairerActivity" />
+        <activity android:name=".activity.MapsActivity" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+            The API key for Google Maps-based APIs is defined as a string resource.
+            (See the file "res/values/google_maps_api.xml").
+            Note that the API key is linked to the encryption key used to sign the APK.
+            You need a different API key for each encryption key, including the release key that is used to
+            sign the APK for publishing.
+            You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".activity.MainActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.repairgrab"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

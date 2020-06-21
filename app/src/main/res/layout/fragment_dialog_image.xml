@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="20dp"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_bottom_sheet_radius">
+
+
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick image from..."
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:fontFamily="@font/avenir_black"/>
+
+        <Button
+            android:id="@+id/bt_camera_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_action"
+            android:drawableLeft="@drawable/camera_ic"
+            android:text="Camera"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:fontFamily="@font/avenir_light"
+            android:drawablePadding="25dp"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="40dp" />
+
+        <Button
+            android:id="@+id/bt_gallery_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_camera_pick"
+            android:drawableLeft="@drawable/gallery_ic"
+            android:text="Gallery"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:fontFamily="@font/avenir_light"
+            android:drawablePadding="25dp"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

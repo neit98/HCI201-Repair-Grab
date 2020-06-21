@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.AccountSettingFragment"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="@color/whitesilver"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:paddingHorizontal="50dp"
+        android:background="@drawable/background_dialog_radius">
+
+        <TextView
+            android:fontFamily="@font/quicksand_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ tên"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Lâm Thanh Phát"
+            android:fontFamily="@font/quicksand_medium"
+            android:editable="false"
+            />
+
+        <TextView
+            android:fontFamily="@font/quicksand_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:hint="0912345678"
+            android:fontFamily="@font/quicksand_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+
+            />
+
+        <TextView
+            android:fontFamily="@font/quicksand_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:hint="thanhphat@gmail.com"
+            android:fontFamily="@font/quicksand_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            />
+
+        <Button
+            android:fontFamily="@font/quicksand_medium"
+            android:layout_width="200dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_white_radius"
+            android:text="Chỉnh sửa"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

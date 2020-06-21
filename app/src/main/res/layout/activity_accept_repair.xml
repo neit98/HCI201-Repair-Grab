@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AcceptRepairActivity"
+    android:orientation="vertical"
+    android:background="@color/bluesilver">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="RepairGrab"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/white"/>
+    
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:drawableLeft="@drawable/ic_marker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vị trí khách hàng"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@color/silver"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16A Tô Ký"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16A Tô Ký, Khu phố 2, P. Trung Mỹ Tây, Q.12"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:drawableLeft="@drawable/ic_distance"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/silver"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Khoảng cách từ chỗ bạn"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="1 km"
+            android:background="@color/white"
+            android:padding="10dp"/>
+
+        <TextView
+            android:drawableLeft="@drawable/ic_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/silver"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Tin nhắn của khách hàng"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="Hư máy lạnh"
+            android:background="@color/white"
+            android:padding="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnAccept"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginBottom="10dp"
+            android:background="@color/orangeDark"
+            android:src="@drawable/ic_check_black_24dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

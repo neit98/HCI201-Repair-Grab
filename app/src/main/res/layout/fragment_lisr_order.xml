@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="100dp"
+        android:id="@+id/animation_view"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        app:lottie_rawRes="@raw/box"
+        app:lottie_loop="true"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <LinearLayout
+        android:id="@+id/list_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Danh sách cần sửa chữa quanh bạn"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:layout_marginBottom="10dp"
+            android:checkedButton="@+id/offer"
+            android:id="@+id/toggle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/pick_out_line"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:fontFamily="@font/quicksand_bold"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/offer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Online"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/search"
+                android:background="@drawable/toggle_widget_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Offline"
+                android:textColor="@color/white" />
+
+
+        </RadioGroup>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_detail_repair"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/ic_distance"
+                        android:drawablePadding="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khoảng cách:"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 km"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:drawableLeft="@drawable/ic_failure"
+                        android:drawablePadding="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thiết bị cần sửa:"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="@font/quicksand_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bếp từ"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_detail_repair2"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/ic_distance"
+                        android:drawablePadding="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khoảng cách:"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.5 km"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:drawableLeft="@drawable/ic_failure"
+                        android:drawablePadding="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thiết bị cần sửa:"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="@font/quicksand_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Máy lạnh"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_detail_repair3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/ic_distance"
+                        android:drawablePadding="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khoảng cách:"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.7 km"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:drawableLeft="@drawable/ic_failure"
+                        android:drawablePadding="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thiết bị cần sửa:"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="@font/quicksand_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Máy giặt"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_detail_repair4"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="clickToViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/ic_distance"
+                        android:drawablePadding="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khoảng cách:"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 km"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:fontFamily="@font/quicksand_light"
+                        android:drawableLeft="@drawable/ic_failure"
+                        android:drawablePadding="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thiết bị cần sửa:"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="@font/quicksand_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bếp điện"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_an"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
